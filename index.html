@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#172b36" />
+  <title>Đọc Sách Ba Miền – Kết nối tri thức</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Đọc Sách Ba Miền">
+      <span class="brand-mark">✦</span><span>ĐỌC SÁCH <b>BA MIỀN</b><small>KẾT NỐI TRI THỨC · LAN TỎA VĂN HÓA ĐỌC</small></span>
+    </a>
+    <nav><a href="#hanh-trinh">Khám phá</a><a href="#phong-doc">Phòng đọc</a><a href="#nhat-ky">Nhật ký đọc</a></nav>
+    <button class="outline-btn" id="profileBtn">Độc giả</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> MỘT HÀNH TRÌNH ĐỌC – BA MIỀN ĐẤT NƯỚC</div>
+        <h1>Mở một trang sách.<br><em>Chạm một chân trời.</em></h1>
+        <p>Gặp nhau trong những căn phòng đọc ấm áp, khám phá sắc màu văn hóa ba miền và cùng nuôi dưỡng tình yêu sách mỗi ngày.</p>
+        <a class="primary-btn" href="#hanh-trinh">Bắt đầu hành trình <span>→</span></a>
+        <div class="hero-note"><span>📚</span> Đọc chậm lại · Nghĩ sâu hơn · Kết nối nhiều hơn</div>
+      </div>
+      <div class="hero-art" aria-label="Minh họa bản đồ Việt Nam và những cuốn sách">
+        <div class="sun-glow"></div>
+        <div class="floating-book book-one">📖</div><div class="floating-book book-two">📚</div>
+        <div class="map-card">
+          <div class="map-title">VIỆT NAM</div>
+          <svg viewBox="0 0 300 420" role="img" aria-label="Bản đồ Việt Nam cách điệu">
+            <defs><linearGradient id="land" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f4d28c"/><stop offset="1" stop-color="#d99b5c"/></linearGradient></defs>
+            <path d="M105 20 C133 25 151 45 146 67 C140 85 161 99 153 119 C145 138 166 151 158 172 C151 193 170 209 158 229 C147 248 162 269 145 288 C130 306 145 324 127 343 C111 360 99 382 82 397 C69 408 58 395 68 379 C81 357 79 338 91 320 C103 301 91 283 103 263 C116 241 99 224 113 204 C126 183 106 164 119 143 C130 122 111 106 124 86 C137 66 111 52 105 20Z" fill="url(#land)" stroke="#fff0cf" stroke-width="3"/>
+            <path d="M119 85 Q145 110 134 145 M113 204 Q143 222 126 255 M102 304 Q123 325 87 365" fill="none" stroke="#fff0cf" stroke-width="2" stroke-dasharray="4 5"/>
+            <circle cx="130" cy="85" r="7" fill="#f5f0d8" stroke="#a85e40" stroke-width="3"/><circle cx="132" cy="218" r="7" fill="#f5f0d8" stroke="#a85e40" stroke-width="3"/><circle cx="91" cy="355" r="7" fill="#f5f0d8" stroke="#a85e40" stroke-width="3"/>
+          </svg>
+          <div class="map-label north">MIỀN BẮC</div><div class="map-label central">MIỀN TRUNG</div><div class="map-label south">MIỀN NAM</div>
+          <div class="map-caption">Ba miền · Một tình yêu sách</div>
+        </div>
+        <div class="spark s1">✧</div><div class="spark s2">✦</div><div class="spark s3">✧</div>
+      </div>
+    </section>
+
+    <section class="section" id="hanh-trinh">
+      <div class="section-heading"><div><div class="eyebrow dark">KHÁM PHÁ KHÔNG GIAN</div><h2>Chọn miền bạn muốn ghé thăm</h2></div><p>Mỗi miền là một căn phòng đọc mang sắc thái riêng. Hãy chọn nơi bạn muốn bắt đầu.</p></div>
+      <div class="region-grid">
+        <button class="region-card north" data-region="Bắc">
+          <span class="region-icon">🏮</span><span class="region-tag">NÉT XƯA & TRI THỨC</span><strong>Miền Bắc</strong><small>Góc đọc trầm ấm, bên hiên nhà và tách trà.</small><span class="card-arrow">Vào phòng đọc ↗</span>
+        </button>
+        <button class="region-card central" data-region="Trung">
+          <span class="region-icon">🌾</span><span class="region-tag">BÌNH YÊN & BỀN BỈ</span><strong>Miền Trung</strong><small>Không gian yên bình, lắng nghe câu chuyện miền gió cát.</small><span class="card-arrow">Vào phòng đọc ↗</span>
+        </button>
+        <button class="region-card south" data-region="Nam">
+          <span class="region-icon">🌿</span><span class="region-tag">PHÓNG KHOÁNG & GẦN GŨI</span><strong>Miền Nam</strong><small>Góc đọc xanh mát, thân thiện và rộng mở.</small><span class="card-arrow">Vào phòng đọc ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="reading-room section" id="phong-doc">
+      <div class="room-visual">
+        <div class="room-window"><div class="moon"></div><div class="window-city">✦　·　✧　·　✦</div></div>
+        <div class="room-shelf">📚　📕　📗　📙　📘</div>
+        <div class="desk"><div class="lamp">💡</div><div class="open-book">📖</div><div class="plant">🪴</div></div>
+        <div class="room-caption">GÓC NHỎ DÀNH CHO NHỮNG TÂM HỒN YÊU SÁCH</div>
+      </div>
+      <div class="room-info">
+        <div class="eyebrow">CÙNG NHAU ĐỌC SÁCH</div>
+        <h2>Một căn phòng.<br><em>Nhiều hành trình.</em></h2>
+        <p>Chọn tên, chọn miền và bắt đầu phiên đọc của bạn. Hãy dành một khoảng thời gian tĩnh lặng cho những trang sách.</p>
+        <form id="joinForm" class="join-form">
+          <label>Tên hiển thị<input id="readerName" maxlength="24" placeholder="Ví dụ: Minh Anh" required /></label>
+          <label>Chọn không gian<select id="readerRegion"><option value="Bắc">Phòng đọc miền Bắc</option><option value="Trung">Phòng đọc miền Trung</option><option value="Nam">Phòng đọc miền Nam</option><option value="Chung">Phòng đọc chung ba miền</option></select></label>
+          <button class="primary-btn" type="submit">Bước vào phòng đọc <span>→</span></button>
+        </form>
+        <div class="reader-status" id="readerStatus">Chưa có phiên đọc nào trên thiết bị này.</div>
+      </div>
+    </section>
+
+    <section class="section journal-section" id="nhat-ky">
+      <div class="section-heading"><div><div class="eyebrow dark">LƯU LẠI ĐIỀU ĐỌNG LẠI</div><h2>Nhật ký đọc sách</h2></div><p>Mỗi cuốn sách là một người bạn. Ghi lại hành trình đọc và cảm nhận của bạn.</p></div>
+      <form id="journalForm" class="journal-form">
+        <input id="bookTitle" placeholder="Tên cuốn sách" required maxlength="100" />
+        <input id="bookAuthor" placeholder="Tác giả" maxlength="80" />
+        <input id="bookMinutes" type="number" min="1" max="600" placeholder="Số phút đọc" required />
+        <input id="bookThought" placeholder="Một điều bạn tâm đắc..." maxlength="180" />
+        <button class="primary-btn" type="submit">Lưu nhật ký +</button>
+      </form>
+      <div class="journal-list" id="journalList"><div class="empty-state">📚 Nhật ký đầu tiên đang chờ bạn viết.</div></div>
+    </section>
+
+    <section class="quote-band"><span>“</span><p>Đọc sách là cách ta trò chuyện với những tâm hồn vượt qua không gian và thời gian.</p><small>ĐỌC SÁCH BA MIỀN</small></section>
+  </main>
+
+  <footer><div class="footer-brand">ĐỌC SÁCH BA MIỀN</div><p>Kết nối tri thức · Lan tỏa văn hóa đọc · Gắn kết cộng đồng</p><small>Phiên bản trải nghiệm ban đầu · Dự án cá nhân</small></footer>
+
+  <dialog id="profileDialog"><form method="dialog" class="dialog-card"><button class="close" aria-label="Đóng">×</button><div class="eyebrow dark">ĐỘC GIẢ</div><h3>Chào mừng bạn đến với hành trình đọc!</h3><p id="profileText">Bạn chưa tham gia phòng đọc trên thiết bị này.</p><button class="primary-btn">Đã hiểu</button></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
